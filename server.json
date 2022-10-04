@@ -10,10 +10,18 @@
     } ,
     {
         "id" : 1 ,
-        "description" : "Desenvolvimento de site" ,
+        "description" : "Lanches Burguer" ,
         "type" : "outcome" ,
         "category" : "Alimento" ,
         "price" : 60 ,
+        "createdAt" : "2022-10-03T18:51:40.420Z"
+    } ,
+    {
+        "id" : 1 ,
+        "description" : "cursos arrasta pra cima" ,
+        "type" : "outcome" ,
+        "category" : "venda" ,
+        "price" : 1940 ,
         "createdAt" : "2022-10-03T18:51:40.420Z"
     } 
     ]
