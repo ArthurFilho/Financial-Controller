@@ -17,7 +17,6 @@ interface TransactionProviderProps {
     children: ReactNode;
 }
 
-
 export const TransactionsContext = createContext( {} as TransactionContextType)
 
 export function TransactionsProvider({children}: TransactionProviderProps ) {
