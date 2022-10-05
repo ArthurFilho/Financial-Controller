@@ -1,28 +1,60 @@
 {
-    "transactions": [
-        {
-        "id" : 1 ,
-        "description" : "Desenvolvimento de site" ,
-        "type" : "income" ,
-        "category" : "Venda" ,
-        "price" : 14000 ,
-        "createdAt" : "2022-10-03T18:51:40.420Z"
-    } ,
+  "transactions": [
     {
-        "id" : 1 ,
-        "description" : "Lanches Burguer" ,
-        "type" : "outcome" ,
-        "category" : "Alimento" ,
-        "price" : 60 ,
-        "createdAt" : "2022-10-03T18:51:40.420Z"
-    } ,
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2022-10-03T18:51:40.420Z"
+    },
     {
-        "id" : 1 ,
-        "description" : "cursos arrasta pra cima" ,
-        "type" : "outcome" ,
-        "category" : "venda" ,
-        "price" : 1940 ,
-        "createdAt" : "2022-10-03T18:51:40.420Z"
-    } 
-    ]
+      "id": 2,
+      "description": "Lanches Burguer",
+      "type": "outcome",
+      "category": "Alimento",
+      "price": 60,
+      "createdAt": "2022-10-03T18:51:40.420Z"
+    },
+    {
+      "id": 3,
+      "description": "cursos arrasta pra cima",
+      "type": "outcome",
+      "category": "venda",
+      "price": 1940,
+      "createdAt": "2022-10-03T18:51:40.420Z"
+    },
+    {
+      "description": "Venda de contas lol",
+      "price": 40,
+      "category": "games",
+      "type": "income",
+      "createdAt": "2022-10-05T13:53:58.293Z",
+      "id": 4
+    },
+    {
+      "description": "pastel de frango",
+      "price": 10,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-10-05T14:12:46.219Z",
+      "id": 3
+    },
+    {
+      "description": "312231",
+      "price": 31232312,
+      "category": "312223123",
+      "type": "outcome",
+      "createdAt": "2022-10-05T14:31:33.899Z",
+      "id": 5
+    },
+    {
+      "description": "Pastel de queijo + frango + presunto",
+      "price": 10,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-10-05T14:37:24.737Z",
+      "id": 6
+    }
+  ]
 }
