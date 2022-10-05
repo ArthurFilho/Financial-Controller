@@ -1,41 +1,44 @@
-import { MagnifyingGlass } from "phosphor-react";
-import { SearchFormContainer } from "./style";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from 'zod';
-import { useContext } from "react";
-import { TransactionsContext } from "../../../../contexts/TransactionsContexts";
+import { MagnifyingGlass } from 'phosphor-react'
+import { SearchFormContainer } from './style'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as z from 'zod'
+import { useContext } from 'react'
+import { TransactionsContext } from '../../../../contexts/TransactionsContexts'
 
 const searchFormSchema = z.object({
-    query: z.string(), 
+  query: z.string(),
 })
 
-type SearchFormInputs = z.infer<typeof searchFormSchema>;
+type SearchFormInputs = z.infer<typeof searchFormSchema>
 
-export function SearchForm () {
+export function SearchForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm<SearchFormInputs>({
+    resolver: zodResolver(searchFormSchema),
+  })
 
-    const { register, handleSubmit , formState: {isSubmitting}} = useForm<SearchFormInputs>({
-        resolver: zodResolver(searchFormSchema),
-    })
-
-    const { fetchTransactions } = useContext(TransactionsContext)
+  const { fetchTransactions } = useContext(TransactionsContext)
 
   async function handleSearchTransaction(data: SearchFormInputs) {
-        await fetchTransactions(data.query)
-    }
+    await fetchTransactions(data.query)
+  }
 
-return(
+  return (
     <SearchFormContainer onSubmit={handleSubmit(handleSearchTransaction)}>
-    <input 
-    type="text" 
-    placeholder="Busque por transações" 
-    {...register('query')}
-    />
+      <input
+        type="text"
+        placeholder="Busque por transações"
+        {...register('query')}
+      />
 
-    <button type="submit" disabled={isSubmitting}>
+      <button type="submit" disabled={isSubmitting}>
         <MagnifyingGlass size={20} />
         Buscar
-    </button>
+      </button>
     </SearchFormContainer>
-)
+  )
 }
