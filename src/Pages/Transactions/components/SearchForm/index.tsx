@@ -10,9 +10,9 @@ const searchFormSchema = z.object({
     query: z.string(), 
 })
 
-const { fetchTransactions } = useContext(TransactionsContext)
-
 type SearchFormInputs = z.infer<typeof searchFormSchema>;
+
+const { fetchTransactions } = useContext(TransactionsContext)
 
 export function SearchForm () {
 
