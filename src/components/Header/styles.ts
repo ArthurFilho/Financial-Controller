@@ -27,7 +27,7 @@ export const TextLogo = styled.p`
 export const NewTransactionButton = styled.button`
   height: 50px;
   border: 0;
-  background: ${(props) => props.theme['green-500']};
+  background: ${(props) => props.theme['red-500']};
   color: ${(props) => props.theme.white};
   font-weight: bold;
   padding: 1.25rem;
@@ -37,7 +37,7 @@ export const NewTransactionButton = styled.button`
   align-items: center;
 
   &:hover {
-    background: ${(props) => props.theme['green-700']};
+    background: ${(props) => props.theme['red-700']};
     transition: background-color 0.2s;
   }
 `
