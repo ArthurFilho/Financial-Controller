@@ -4,7 +4,6 @@ import {
   HeaderContent,
   LogoContent,
   NewTransactionButton,
-  TextLogo,
 } from './styles'
 import * as Dialog from '@radix-ui/react-dialog'
 import { NewTransactionModal } from '../NewTransactionModal'
@@ -14,8 +13,7 @@ export function Header() {
     <HeaderContainer>
       <HeaderContent>
         <LogoContent>
-          <Coins />
-          <TextLogo>Financial Controller </TextLogo>
+          <Coins size={50} color="#F75A68" />
         </LogoContent>
 
         <Dialog.Root>
