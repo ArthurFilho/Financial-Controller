@@ -6,6 +6,7 @@
 <h2> O que foi utilizado 💻 </h2>
 
 - [REACT.JS]()
+- [SERVER-JSON]()
 - [AXIOS]()
 - [TYPESCRIPT]()
 - [MEMO]()
@@ -17,7 +18,7 @@
 - [RADIX-UI]()
 - [REACT-HOOK-FORM]()
 
-<h1> <a href=""> Clique aqui para ver o site em ação </a></h1>
+<h1> <a href="https://controllerfinancial.netlify.app/"> Clique aqui para ver o site em ação </a></h1>
 
 <h1> Descrição </h1>
 <p> Projeto desenvolvido com intuito de ser um controlador financeiro, onde mostra todos seus gastos e ganhos e tem uma barra de pesquisa, tudo é calculado automatico de acordo com o que voce ganha e recebe adicionando as transações.  </p>
