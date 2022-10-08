@@ -6,7 +6,7 @@
 <h2> O que foi utilizado 💻 </h2>
 
 - [REACT.JS]()
-- [SERVER-JSON]()
+- [JSON-SERVER]()
 - [AXIOS]()
 - [TYPESCRIPT]()
 - [MEMO]()
